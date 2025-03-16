@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial.scale=1.0">
+    <title>Testing Progress</title>
+    <style>
+    * {
+    text-align: center;
+    }
+    p {
+        font-family: arial, sans-serif;
+    }
+    h1, h2 {
+        font-family: verdana, sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h1>Testing Progess</h1>
+    <p>Testing my progress and what I have retained thus far.</p>
+<div>
+    <p>The <span id="output">light</span> is <span id="light">off</span>.</p>
+</div>
+<div>
+    <button type="button" onclick="light(1)">On</button>
+    <button type="button" onclick="light(0)">Off</button>
+</div>
+<div>
+    <h2>Programs I know so far : Html, Css, Javascript</h2>
+</div>
+<script>
+    function light(sw) {
+        if (sw == 0) {
+        document.getElementById("light").innerText = "off";
+        document.getElementById("output").style.backgroundColor = "Grey";
+        document.getElementById("output").style.color = "White"
+        } else {
+        document.getElementById("light").innerText = "on";
+        document.getElementById("output").style.backgroundColor = "Yellow";
+        document.getElementById("output").style.color = "Black"
+        }
+    }
+</script>
+<noscript>Does not support JavaScript</noscript>
+</body>
+</html>
